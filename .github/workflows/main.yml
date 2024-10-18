@@ -21,11 +21,6 @@ jobs:
           sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
           sudo xcodebuild -runFirstLaunch
 
-      - name: Install Dependencies
-        run: |
-          cd YourProjectDirectory
-          xcodebuild -resolvePackageDependencies
-
       - name: Build
         run: |
           cd YourProjectDirectory
